@@ -23,14 +23,15 @@ todos = [
 
 ]
 maxofmax = 0
+countindex = 0
 for group in todos:
-
+    countindex = countindex+1
     maxingroup = max(group)
     if maxingroup > maxofmax:
         maxofmax = maxingroup
+        maxindex = countindex
+
     else:
         pass
 
-print ("El mas alto es %d" %maxofmax)
-
-    
+print ("El mas alto es %d del grupo %d " %(maxofmax, maxindex))
