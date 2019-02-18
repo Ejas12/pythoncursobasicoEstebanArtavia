@@ -10,11 +10,8 @@ class Vehiculo:
         if self.avancetotal >= 1000:
             print ("El Vehiculo {} ha ganado".format(self.modelo))
             self.win = True
-    def fuerza_motor (self):
+    def fuerza_motorfunc (self):
         self.fuerza_motor = random.randint(1,9)
-        else:
-            pass
-      
 
 
 
