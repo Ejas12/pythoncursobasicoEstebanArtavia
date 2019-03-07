@@ -1,0 +1,56 @@
+Cuáles son las diferencias en la lista y la tupla?
+La lista es mutable, la tupla no
+
+Cómo se puede usar expresiones if else en una sóloa línea, comúnmente llamadas operaraciones ternarias
+
+Para que sirve dir() y help()?
+dir() es para listar los atributos de un objeto
+help() es para recibir detalles de funciones y objetos
+Que son diccionarios?
+Son una coleccion de datos inmutable
+Que son *args y **kwargs ? Como se usan?
+son para pasar argumentos a funciones, args pasa plain values y kwargs pasa valores con keys
+Qué son índices negativos?
+son los indices de una lista para buscar el ultimo elemento o ir de ahi hacia atras
+Como se puede order aleatoriamente -o desordenar- una lista?
+from random import shuffle
+shuffle(lista)
+
+Como se puede ordenar una lista ?
+
+con el metodo .sort() 
+
+Explique o justifique los resultados de A0,A1,A2,A3,A4,A5,A6 ?
+
+A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
+lo que crea es diccionario {a:1, b:2..... zip concatena  ambas tuplas y dict las define en un diccionario
+
+A1 = range(10)
+da numeros del 0 al 10
+A2 = sorted([i for i in A1 if i in A0])
+busca los elementos en a1 y los compara con a0... al final los guarda en una lista ordenada
+A3 = sorted([A0[s] for s in A0])
+saca los indexes de a0 y e imprime lo que tengan adentro en una lista ordenada
+A4 = [i for i in A1 if i in A3]
+Compara a1 y a3 y guarda los elementos en comun en una lista
+A5 = {i:i*i for i in A1}
+crea un diccionario que tiene el elemento como key y el valor de elemento guardado multiplicado por si mismo
+A6 = [[i,i*i] for i in A1]
+Crea una lista de listas con el elemento seguido del elemento por si mismo
+print(A0,A1,A2,A3,A4,A5,A6)
+
+Cómo se pueden generar números aleatorios? enteros y decimales
+import random
+random.randint()
+random.uniform()
+
+Qué es pickling y unpickling?
+Es para guardar la sesion de consola y cargarla en otro lado
+Para que sirve la función map, lambda y filter?
+map es para correr una funcion a todos los itemes de una lista
+lambda es para crear funciones anonimas y en una linea
+filtra itemes basado en si una funcion es tru o no
+
+Qué es list comprehension, set comprehension y dict comprehension?
+
+son maneras para desempaquetar las colecciones y crear un objeto deseado
